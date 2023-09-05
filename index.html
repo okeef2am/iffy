@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width,
-    intial-scale=1.0">
-    <link rel="icon" href="https://fav.farm/🥰" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <link rel="icon" href="https://fav.farm/🔥" />
     <title>Iffy</title>
 </head>
 
@@ -13,12 +13,15 @@
     <main>
         <h1>Iffy</h1>
         <script>
-            if (window.location.href.contains("github.io")){
-                <img src="https://picsum.photos/id/200/200/300" alt="image displayed because ON github pages"></img>;
+            if (window.location.host.includes("github.io")) {
+                document.write('<img src={"https://picsum.photos/id/200/200/300"} alt="image displayed because ON github pages" />')
+                // <img src="https://picsum.photos/id/200/200/300" alt="image displayed because ON github pages">;
             } else {
-                <img src="https://picsum.photos/id/343/200/300" alt="image displayed because not github pages"></img>;
+                document.write('<img src={"https://picsum.photos/id/343/200/300"} alt="image displayed because not github pages" />')
+                // <img src="https://picsum.photos/id/343/200/300" alt="image displayed because not github pages"></img>;
             }
         </script>
     </main>
 </body>
+
 </html>
